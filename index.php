@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/navbar.css">
 </head>
 
 <body>
 
-    <div id="navbar-container"></div>
+     <div id="navbar-container"></div>
 
     <div class="content">
         <h1>Euphoric 2025</h1>
@@ -118,7 +119,7 @@
     </div>
 
     <div id="footer-container"></div>
-
+    <script src ="assets/js/navbar.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>
