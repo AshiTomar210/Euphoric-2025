@@ -14,7 +14,6 @@
 <body>
 
     <div id="navbar-container"></div>
-
     <div class="content">
         <h1>Euphoric 2025</h1>
         <div class="slider-container">
@@ -118,6 +117,8 @@
     </div>
 
     <div id="footer-container"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 
     <script src="assets/js/script.js"></script>
 
