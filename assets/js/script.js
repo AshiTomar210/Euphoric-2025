@@ -1,15 +1,17 @@
 // Load Navbar
-fetch('navbar.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
-        const menuTrigger = document.getElementById('menu-trigger');
-        if (menuTrigger) {
-            menuTrigger.addEventListener('click', toggleMenu);
-        }
-    });
+// fetch('navbar.html')
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById('navbar-container').innerHTML = data;
+//         const menuTrigger = document.getElementById('menu-trigger');
+//         if (menuTrigger) {
+//             menuTrigger.addEventListener('click', toggleMenu);
+//         }
+//     });
 
 // Load Footer
+console.log("Navbara JS loaded");
+
 fetch('footer.html')
     .then(response => response.text())
     .then(data => document.getElementById('footer-container').innerHTML = data);
