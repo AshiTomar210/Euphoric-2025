@@ -14,7 +14,6 @@
 <body>
 
     <div id="navbar-container"></div>
-
     <div class="content">
         <h1>Euphoric 2025</h1>
         <div class="slider-container">
@@ -41,7 +40,8 @@
         <div class="guests-block">
             <h2>Our Guests</h2>
             <div class="guests-row">
-                <div class="guest-box">
+                <!-- Remove guest-box if you want only "To be updated" -->
+                <div class="update-box">
                     <h3>To be updated...</h3>
                     <!-- <div class = "guest-image-container">
                         <img src="img/darshan.jpg" alt="Guest 1 Image" class="guest-image">
@@ -127,7 +127,7 @@
     </div>
 
     <div id="footer-container"></div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>

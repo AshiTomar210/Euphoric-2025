@@ -1,13 +1,20 @@
 <nav class="navbar">
-    <div class="navbar-logo">
-        <img src="img/clg logo.jpg" alt="Logo">
-    </div>
-    <span id="menu-trigger">&#9776;</span>
-    <ul class="navbar-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="includes/schedule.html">Schedule</a></li>
-        <li><a href="includes/coordinators.html">Coordinators</a></li>
-        <li><a href="includes/rules.html">Rules</a></li>
-        <a href="includes/register-links.php"><button class="register-btn">Register</button></a>
-    </ul>
+  <div class="navbar-logo">
+    <img id="logo" src="/img/clg logo.jpg" alt="Logo">
+  </div>
+  <div class="menu-trigger" id="menu-trigger">&#9776;</div>
+  <!-- light Mode Toggle here -->
+  <label class="theme-switch">
+    <input type="checkbox" id="theme-toggle" />
+    <span>Light Mode</span>
+  </label>
+  <ul class="navbar-links" id="navbar-links">
+    <li><a href="/index.php">Home</a></li>
+    <li><a href="/includes/schedule.html"onclick="location.href=this.href">Schedule</a></li>
+    <li><a href="/includes/coordinators.html"onclick="location.href=this.href">Coordinators</a></li>
+    <li><a href="/includes/rules.html" onclick="location.href=this.href">Rules</a></li>
+    <li><a href="/includes/register-links.php"onclick="location.href=this.href">
+      <button class="register-btn">Register</button>
+    </a></li>
+  </ul>
 </nav>

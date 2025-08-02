@@ -1,7 +1,6 @@
 body {
-    background-color: #121212; /* Darker background */
-    color: #e0e0e0; /* Lighter text color */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    /* No background-color or color here, use global variables */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,9 +16,9 @@ body {
 }
 
 .registration-form {
-    background-color: #1a1a1a;
-    border: 2px solid #d4af37; /* Subtle gold border */
-    box-shadow: 0 0 15px 5px rgba(212, 175, 55, 0.3); /* Lighter shadow */
+    background-color: var(--card-bg-color);
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 15px 5px rgba(212, 175, 55, 0.3);
     padding: 40px;
     width: 100%;
     box-sizing: border-box;
@@ -31,14 +30,15 @@ body {
     text-align: center;
     margin-bottom: 30px;
     font-family: 'Creepster', cursive;
-    font-size: 2.5em; /* Restore previous font size */
-    color: #ffd700;
+    font-size: 2.5em;
+    color: var(--accent-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    position: static; /* Change to static */
-    transform: none; /* Remove transform */
-    background-color: transparent; /* Remove background */
-    padding: 0; /* Remove padding */
+    position: static;
+    transform: none;
+    background-color: transparent;
+    padding: 0;
 }
+
 .form-group {
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@ label {
     text-align: right;
     margin-right: 15px;
     font-size: 1.1em;
-    color: #bdbdbd; /* Lighter label color */
+    color: var(--text-color);
 }
 
 input[type="text"],
@@ -60,9 +60,9 @@ input[type="tel"],
 input[type="email"] {
     width: 65%;
     padding: 12px;
-    border: 1px solid #555; /* Darker input border */
-    background-color: #282828;
-    color: #e0e0e0; /* Lighter input text */
+    border: 1px solid var(--accent-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 1em;
@@ -80,7 +80,7 @@ input[type="email"] {
     margin-bottom: 8px;
     text-align: left;
     font-size: 1em;
-    color: #bdbdbd; /* Lighter checkbox label */
+    color: var(--text-color);
 }
 
 .submit-button-container {
@@ -89,30 +89,29 @@ input[type="email"] {
 }
 
 .register-btn {
-    background-color: #d4af37; /* Muted gold button */
-    color: #1a1a1a; /* Darker button text */
+    background-color: var(--accent-color);
+    color: var(--bg-color);
     padding: 18px 35px;
     border: none;
     border-radius: 8px;
     font-size: 1.3em;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Lighter button shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .register-btn:hover {
-    background-color: #c29f30; /* Darker muted gold on hover */
+    background-color: #c29f30;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 /* team disclaimer */
-
 .disclaimer {
     text-align: center;
     margin-bottom: 20px;
     font-style: italic;
-    color: #bdbdbd;
+    color: var(--text-color);
 }
 
 .registration-links {
@@ -126,7 +125,7 @@ input[type="email"] {
 
 .link-item a {
     font-size: 1.5em;
-    color: #ffd700;
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -136,31 +135,30 @@ input[type="email"] {
 }
 
 .description {
-    color: #bdbdbd;
+    color: var(--text-color);
     margin-top: 5px;
 }
 
-/* team submisson */
-
+/* team submission */
 .team-submission {
     margin-top: 20px;
 }
 .team-note-box {
-    background-color: #282828; /* Darker background for note box */
-    border: 1px solid #555; /* Dark border */
+    background-color: var(--bg-color);
+    border: 1px solid var(--accent-color);
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 .team-note {
     font-style: italic;
-    color: #bdbdbd;
+    color: var(--text-color);
     list-style: none;
     padding: 0;
     margin: 10px 0;
 }
 .event-checkboxes {
-list-style: none;
+    list-style: none;
     padding: 0;
     margin: 10px 0;
 }
@@ -169,7 +167,6 @@ list-style: none;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 10px;
-    
 }
 
 .team-events label {
@@ -177,7 +174,7 @@ list-style: none;
     margin-bottom: 5px;
     text-align: left;
     font-size: 1em;
-    color: #bdbdbd;
+    color: var(--text-color);
     display: flex;
     align-items: center;
 }
@@ -189,20 +186,20 @@ list-style: none;
 .team-members label {
     display: block;
     margin-bottom: 5px;
-    color: #bdbdbd;
-    text-align: left; /* Align label to left */
+    color: var(--text-color);
+    text-align: left;
 }
 
 .team-members textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #555;
-    background-color: #282828;
-    color: #e0e0e0;
+    border: 1px solid var(--accent-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 1em;
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical;
 }
 .event-checkboxes input[type="checkbox"], .team-events input[type="checkbox"] {
     margin-right: 10px;
@@ -210,23 +207,22 @@ list-style: none;
 
 @media (max-width: 600px) {
     .event-checkboxes label, .team-events label {
-        flex-direction: row; /* Ensure proper alignment */
+        flex-direction: row;
     }
 
     .event-checkboxes input[type="checkbox"], .team-events input[type="checkbox"] {
-        margin-right: 5px; /* Reduce spacing on mobile */
+        margin-right: 5px;
     }
 
     .team-members label {
-        text-align: left; /* Ensure label is left-aligned */
+        text-align: left;
     }
 }
 
 /* last date box */
-
 .last-date-box {
-    background-color: #282828; /* Darker background */
-    border: 1px solid #555; /* Dark border */
+    background-color: var(--bg-color);
+    border: 1px solid var(--accent-color);
     padding: 15px;
     border-radius: 5px;
     margin-top: 20px;
@@ -234,18 +230,18 @@ list-style: none;
 }
 
 .last-date-text {
-    color: #bdbdbd; /* Lighter text color */
+    color: var(--text-color);
     margin: 0;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .last-date-box {
-        padding: 10px; /* Reduced padding on mobile */
-        margin-top: 15px; /* Reduced margin on mobile */
+        padding: 10px;
+        margin-top: 15px;
     }
 
     .last-date-text {
-        font-size: 0.9em; /* Smaller font on mobile */
+        font-size: 0.9em;
     }
 }

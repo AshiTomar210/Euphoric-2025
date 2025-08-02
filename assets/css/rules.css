@@ -1,6 +1,5 @@
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    /* No background-color or color here, use global variables */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
@@ -17,8 +16,8 @@ body {
 }
 
 .rules-block {
-    background-color: #1a1a1a;
-    border: 2px solid #d4af37;
+    background-color: var(--card-bg-color);
+    border: 2px solid var(--accent-color);
     box-shadow: 0 0 15px 5px rgba(212, 175, 55, 0.3);
     padding: 40px;
     width: 100%;
@@ -31,7 +30,7 @@ body {
     margin-bottom: 30px;
     font-family: 'Creepster', cursive;
     font-size: 2.5em;
-    color: #ffd700;
+    color: var(--accent-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -41,7 +40,7 @@ body {
 }
 
 .rules-section h3 {
-    color: #ffd700;
+    color: var(--accent-color);
     margin-bottom: 15px;
 }
 
@@ -52,21 +51,24 @@ body {
 
 .rules-section li {
     margin-bottom: 8px;
+    color: var(--text-color);
 }
 
 .rules-section a {
-    color: #999;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .rules-section a:hover {
     text-decoration: underline;
 }
-.gen-rule{
-    list-style-type:disc;
-    color: #999;
+
+.gen-rule {
+    list-style-type: disc;
+    color: var(--link-color);
     text-decoration: none;
 }
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     .rules-block {

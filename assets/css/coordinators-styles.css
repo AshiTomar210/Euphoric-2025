@@ -1,6 +1,5 @@
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    /* Remove background-color and color here, use global variables */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
@@ -17,8 +16,8 @@ body {
 }
 
 .coordinators-form {
-    background-color: #1a1a1a;
-    border: 2px solid #d4af37;
+    background-color: var(--card-bg-color);
+    border: 2px solid var(--accent-color);
     box-shadow: 0 0 15px 5px rgba(212, 175, 55, 0.3);
     padding: 20px;
     width: 100%;
@@ -31,7 +30,7 @@ body {
     margin-bottom: 20px;
     font-family: 'Creepster', cursive;
     font-size: 2em;
-    color: #ffd700;
+    color: var(--accent-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -43,7 +42,7 @@ body {
 
 .coordinator-block {
     width: 100%;
-    background-color: #282828;
+    background-color: var(--bg-color);
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 15px;
@@ -51,7 +50,7 @@ body {
 }
 
 .coordinator-block h3 {
-    color: #ffd700;
+    color: var(--accent-color);
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -59,30 +58,30 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* Important for fixed column widths */
+    table-layout: fixed;
 }
 
 th, td {
-    border: 1px solid #555;
-    padding: 6px; /* Further reduced padding */
+    border: 1px solid var(--accent-color);
+    padding: 6px;
     text-align: left;
-    font-size: 0.8em; /* Further reduced font size */
-    word-break: break-word; /* Prevent long words from overflowing */
+    font-size: 0.8em;
+    word-break: break-word;
 }
 
 th {
-    background-color: #333;
-    color: #e0e0e0;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
 }
 
 td {
-    color: #999;
+    color: var(--text-color);
 }
 
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     th, td {
-        padding: 4px; /* Even smaller padding */
-        font-size: 0.7em; /* Even smaller font size */
+        padding: 4px;
+        font-size: 0.7em;
     }
 }

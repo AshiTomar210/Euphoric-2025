@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark"> <!-- default dark mode -->
+<head>
+  <meta charset="UTF-8" />
+  <title>Dark Mode Example</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="dark-mode">
+  <div id="navbar-container"></div>
+  <div id="footer-container"></div>
+
+  <script src="../assets/js/script.js"></script>
+  <script>
+    // Load navbar content dynamically
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
