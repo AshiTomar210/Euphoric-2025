@@ -10,8 +10,6 @@ $page = 'cultural-form';
     <link rel="stylesheet" href="assets/css/register-styles.css">
     <link rel="stylesheet" href="assets/lib/toast-simple-notify/simple-notify.min.css" />
     <script src="assets/lib/jquery/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/lib/toast-simple-notify/simple-notify.min.css" />
-
 </head>
 <body>
     <div class="registration-container">

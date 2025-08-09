@@ -25,28 +25,26 @@ $("#registrationForm").submit(function (e) {
 
         $.ajax({
             type: "POST",
-            url: "config/techapi.php",
+            url: "config/techapi.php", // Make sure this points to the correct API file
             data: msaForm,
             contentType: false,
             processData: false,
             success: function (response) {
-                if (response === "success") {
-                    new Notify({
-                        title: 'Form Status',
-                        text: 'Form submitted successfully!',
-                        status: 'success',
-                        position: 'right bottom',
-                    });
-                    $('#registrationForm')[0].reset();
+                // --- MODIFIED SECTION ---
+                if (response.trim() === "success") {
+                    // Redirect to the success page
+                    window.location.href = '/Euphoric-2025/success.php';
                 } else {
+                    // If there's an error, show it
                     new Notify({
                         title: 'Form Status',
-                        text: response, // Display the error message
+                        text: response,
                         status: 'error',
                         position: 'right bottom',
                     });
+                    $(':input[type="submit"]').prop('disabled', false);
                 }
-                $(':input[type="submit"]').prop('disabled', false);
+                // --- END OF MODIFIED SECTION ---
             },
             error: function () {
                 new Notify({

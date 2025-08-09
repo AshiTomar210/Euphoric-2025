@@ -44,10 +44,10 @@ $page = 'technical-form';
                 <div class="form-group">
                     <label>Technical Events:</label>
                     <div class="event-checkboxes">
-                        <label><input type="checkbox" name="technicalEvents[]" value="langame">LAN Game</label>
-                        <label><input type="checkbox" name="technicalEvents[]" value="crosswordpuzzle">Crossword puzzle</label>
-                        <label><input type="checkbox" name="technicalEvents[]" value="extempore">Extempore</label>
-                        <label><input type="checkbox" name="technicalEvents[]" value="debate">Debate</label>
+                        <label><input type="checkbox" name="technicalEvents[]" value="LAN Game">LAN Game</label>
+                        <label><input type="checkbox" name="technicalEvents[]" value="Crossword puzzle">Crossword puzzle</label>
+                        <label><input type="checkbox" name="technicalEvents[]" value="Extempore">Extempore</label>
+                        <label><input type="checkbox" name="technicalEvents[]" value="Debate">Debate</label>
                     </div>
                 </div>
                 
@@ -56,7 +56,7 @@ $page = 'technical-form';
                         <p class="team-note">Only the team captain is authorized to fill out the form for team events.</p>
                     </div>
                     <div class="team-events">
-                        <label><input type="checkbox" name="technicalEvents[]" value="admadshow">AD MAD Show</label>
+                        <label><input type="checkbox" name="technicalEvents[]" value="AD MAD Show">AD MAD Show</label>
                     </div>
                     <div class="team-members">
                         <label for="teamMembers">Team Members Names:</label>

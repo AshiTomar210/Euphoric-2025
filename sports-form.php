@@ -46,15 +46,15 @@ $page = 'sports-form';
                     <label>Sports Events:</label>
                     <div class="event-checkboxes">
                        
-                        <label><input type="checkbox" name="sportsEvents[]" value="shotput">Shot Put</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="smallrace">100m race</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="longrace">200m race</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="badminton">Badminton</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="chess">Chess</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="carrom">Carrom</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="longjump">Long Jump</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="lemonrace">Lemon race</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="tabletennis">Table Tennis</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Shot Put">Shot Put</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="100m race">100m race</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="200m race">200m race</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Badminton">Badminton</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Chess">Chess</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Carrom">Carrom</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Long jump">Long Jump</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Lemon race">Lemon race</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Table Tennis">Table Tennis</label>
                     </div>
                 </div>
 
@@ -65,11 +65,11 @@ $page = 'sports-form';
                     <p class="team-note">Only the team captain is authorized to fill out the form for team events.</p>
                     </div>
                     <div class="team-events">
-                        <label><input type="checkbox" name="sportsEvents[]" value="cricket">Cricket</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="volleyball">Volleyball</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="basketball">Basketball</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="tugofwar">Tug of war</label>
-                        <label><input type="checkbox" name="sportsEvents[]" value="relayrace">400m Relay Race</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Cricket">Cricket</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Volleyball">Volleyball</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Basketball">Basketball</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Tug of war">Tug of war</label>
+                        <label><input type="checkbox" name="sportsEvents[]" value="Relay Race">400m Relay Race</label>
                     </div>
                     <div class="team-members">
                         <label for="teamMembers">Team Members Names:</label>

@@ -30,23 +30,21 @@ $("#registrationForm").submit(function (e) {
             contentType: false,
             processData: false,
             success: function (response) {
-                if (response === "success") {
-                    new Notify({
-                        title: 'Form Status',
-                        text: 'Form submitted successfully!',
-                        status: 'success',
-                        position: 'right bottom',
-                    });
-                    $('#registrationForm')[0].reset();
+                // --- MODIFIED SECTION ---
+                if (response.trim() === "success") {
+                    // Instead of showing a notification, redirect to the success page.
+                    window.location.href = 'success.php';
                 } else {
+                    // If there's an error, show the notification as before.
                     new Notify({
                         title: 'Form Status',
-                        text: response, // Display the error message
+                        text: response, // Display the error message from api.php
                         status: 'error',
                         position: 'right bottom',
                     });
+                    $(':input[type="submit"]').prop('disabled', false); // Re-enable button on error
                 }
-                $(':input[type="submit"]').prop('disabled', false);
+                // --- END OF MODIFIED SECTION ---
             },
             error: function () {
                 new Notify({
