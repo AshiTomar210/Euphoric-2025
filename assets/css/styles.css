@@ -532,7 +532,7 @@ footer span {
   font-size: 18px;
 }
 .footer-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .form {
