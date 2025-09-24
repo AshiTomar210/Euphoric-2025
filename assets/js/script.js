@@ -1,3 +1,8 @@
+// Simple auth check: redirect to login if not authenticated
+if (!localStorage.getItem('isAuthenticated') && !window.location.pathname.endsWith('login.html') && !window.location.pathname.endsWith('signup.html')) {
+    window.location.href = 'login.html';
+}
+
 // Load Navbar
 fetch('navbar.html')
     .then(response => response.text())

@@ -1,0 +1,120 @@
+/* Auth (Login/Signup) Page Styles - matches Euphoric 2025 theme */
+.auth-container {
+  background: var(--card-bg-color);
+  color: var(--text-color);
+  width: 450px;
+  margin: 60px auto 0 auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', 'Frijole', cursive, sans-serif;
+}
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.auth-form label {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  color: var(--accent-color);
+}
+.auth-form input, .auth-form select {
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #232323;
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.2s;
+}
+.auth-form input:focus, .auth-form select:focus {
+  background: #333;
+}
+/* Main button style */
+.auth-form button {
+  background: var(--accent-color);
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-family: 'Poppins', 'Frijole', cursive, sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 0.5rem;
+}
+.google-login-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.2rem 0 0.7rem 0;
+}
+.google-login-separator span {
+  color: var(--accent-color);
+  font-size: 1rem;
+  background: var(--card-bg-color);
+  padding: 0 1rem;
+  position: relative;
+}
+.google-login-separator:before, .google-login-separator:after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #444;
+  margin: 0 0.5rem;
+}
+.google-login-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  background: #fff;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 0;
+  font-size: 1.05rem;
+  font-family: 'Poppins', 'Frijole', cursive, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.google-login-btn img {
+  width: 22px;
+  height: 22px;
+  background: none;
+}
+.google-login-btn:hover {
+  background: var(--accent-color);
+  color: #121212;
+}
+.auth-form button:hover {
+  background: #fff;
+  color: var(--accent-color);
+}
+.auth-container p {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+}
+.auth-container a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.auth-container a:hover {
+  color: #fff;
+}
