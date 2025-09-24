@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="assets/css/gallery-styles.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>3x3 Interactive Gallery</title>
+    <link rel="stylesheet" href="gallery-styles.css">
 </head>
 <body>
-    <div id="navbar-container"></div>
+    <!-- Navbar -->
+    <!-- <div id="navbar-container"></div> -->
+
+    <!-- Gallery Section -->
     <div class="gallery-container">
-        <h2>Gallery</h2>
+        <h2>Gallery Highlights</h2>
         <div class="gallery-images">
-            <img src="img/nimage1.jpg" alt="Gallery Image 2">
-            <img src="img/nimage2.jpg" alt="Gallery Image 1">
-            <img src="img/nimage3.jpg" alt="Gallery Image 3">
-            <img src="img/nimage4.jpg" alt="Gallery Image 4">
-            <img src="img/nimage15.jpg" alt="Gallery Image 6">
-            <img src="img/nimage14.jpg" alt="Gallery Image 6">
-            <img src="img/nimage5.jpg" alt="Gallery Image 6">
-            <img src="img/nimage6.jpg" alt="Gallery Image 5">
-            <img src="img/nimage7.jpg" alt="Gallery Image 6">
-            <img src="img/nimage8.jpg" alt="Gallery Image 6">
-            <img src="img/nimage9.jpg" alt="Gallery Image 6">
-            <img src="img/nimage10.jpg" alt="Gallery Image 6">
-            <img src="img/nimage11.jpg" alt="Gallery Image 6">
-            <img src="img/nimage12.jpg" alt="Gallery Image 6">
-            </div>
+           
+        <img src="img/nimage2.jpg" alt="Image 1">
+        <img src="img/nimage3.jpg" alt="Image 2">
+        <img src="img/nimage4.jpg" alt="Image 3">
+        <img src="img/nimage5.jpg" alt="Image 4">
+        <img src="img/nimage6.jpg" alt="Image 5">
+        <img src="img/nimage7.jpg" alt="Image 6">
+        <img src="img/nimage8.jpg" alt="Image 7">
+        <img src="img/nimage9.jpg" alt="Image 8">
+        <img src="img/nimage10.jpg" alt="Image 9">
+        <img src="img/nimage11.jpg" alt="Image 10">
+        <img src="img/nimage12.jpg" alt="Image 11">
+        <img src="img/nimage13.jpg" alt="Image 12">
+        <img src="img/nimage14.jpg" alt="Image 13">
+        <img src="img/nimage15.jpg" alt="Image 14">
+        <img src="img/nimage8.jpg" alt="Image 15">
+
+            
+        </div>
     </div>
 
-     <script>
-   
-    fetch("navbar.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("navbar-container").innerHTML = data;
-        });
+    <!-- Modal / Lightbox -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const successMessage = document.querySelector('.message.success');
-        if (successMessage) {
-            setTimeout(function () {
-                successMessage.style.opacity = '0';
-                setTimeout(function () {
-                    successMessage.style.display = 'none';
-                }, 300);
-            }, 5000);
-        }
-    });
-</script>
-
+    <!-- JS -->
+    <script src="assets/js/gallery.js"></script>
+    <script>
+       
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => document.getElementById("navbar-container").innerHTML = data);
+    </script>
 </body>
 </html>
