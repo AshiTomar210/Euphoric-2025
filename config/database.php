@@ -48,28 +48,42 @@ class Database {
     }
 
     private function createTables() {
-        $sql = "CREATE TABLE IF NOT EXISTS `lost_and_found` (
-            `id` int(11) NOT NULL AUTO_INCREMENT,
-            `title` varchar(150) NOT NULL,
-            `description` text NOT NULL,
-            `location` varchar(255) NOT NULL,
-            `date_found` date DEFAULT NULL,
-            `time_found` time DEFAULT NULL,
-            `image_path` varchar(255) DEFAULT NULL,
-            `contact_info` varchar(255) NOT NULL,
-            `status` enum('lost','found') NOT NULL DEFAULT 'lost',
-            `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-            PRIMARY KEY (`id`),
-            KEY `idx_status` (`status`),
-            KEY `idx_created_at` (`created_at`)
-        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci";
+    // Lost and found table (already present)
+     $sql1 = "CREATE TABLE IF NOT EXISTS `lost_and_found` (
+        `id` int(11) NOT NULL AUTO_INCREMENT,
+        `title` varchar(150) NOT NULL,
+        `description` text NOT NULL,
+        `location` varchar(255) NOT NULL,
+        `date_found` date DEFAULT NULL,
+        `time_found` time DEFAULT NULL,
+        `image_path` varchar(255) DEFAULT NULL,
+        `contact_info` varchar(255) NOT NULL,
+        `status` enum('lost','found') NOT NULL DEFAULT 'lost',
+        `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+        PRIMARY KEY (`id`),
+        KEY `idx_status` (`status`),
+        KEY `idx_created_at` (`created_at`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci";
 
-        try {
-            $this->conn->exec($sql);
-        } catch (PDOException $e) {
-            die("Table creation error: " . $e->getMessage());
-        }
+    // Users table
+     $sql2 = "CREATE TABLE IF NOT EXISTS `users` (
+        `id` int(11) NOT NULL AUTO_INCREMENT,
+        `name` varchar(100) NOT NULL,
+        `email` varchar(150) NOT NULL UNIQUE,
+        `password` varchar(255) NOT NULL,
+        `role` enum('student','coordinator','admin') NOT NULL DEFAULT 'student',
+        `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+        PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci";
+
+    try {
+        $this->conn->exec($sql1);
+        $this->conn->exec($sql2);
+    } catch (PDOException $e) {
+        die("Table creation error: " . $e->getMessage());
     }
+   }
+
 
     // Method to check if connection is valid
     public function isConnected() {
