@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.html");
+    exit;
+}
+?>
+<!-- ...rest of your HTML code... -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -192,6 +200,18 @@
             }, 5000);
         }
     });
+    document.addEventListener('DOMContentLoaded', function () {
+    // Delegate in case navbar is loaded dynamically
+    document.body.addEventListener('click', function (e) {
+        if (e.target && e.target.id === 'logoutBtn') {
+            // Optional: Clear session via AJAX if using PHP sessions
+            fetch('logout.php')
+                .then(() => {
+                    window.location.href = 'login.html';
+                });
+        }
+    });
+});
 </script>
 
     
