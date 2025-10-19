@@ -376,11 +376,11 @@ body.dark-mode .footer-bottom {
     </div>
     <span id="menu-trigger">&#9776;</span>
     <ul class="navbar-links">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="../schedule.html">Schedule</a></li>
-        <li><a href="../coordinators.html">Coordinators</a></li>
-        <li><a href="../rules.html">Rules</a></li>
-        <li><a href="./event_listing.html">Events</a></li>
+        <li><a href="../../index.php">Home</a></li>
+        <li><a href="../schedule.php">Schedule</a></li>
+        <li><a href="../coordinators.php">Coordinators</a></li>
+        <li><a href="../rules.php">Rules</a></li>
+        <li><a href="./event_listing.php">Events</a></li>
         <li><a href="../lost-and-found.php">Lost & Found</a></li>
         <a href="../register-links.php"><button class="register-btn">Register</button></a>
         <button class="theme-toggle"><img src="../../img/themes.png" alt="theme toggle"></button>

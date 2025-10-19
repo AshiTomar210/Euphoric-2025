@@ -1,0 +1,113 @@
+/* =============================
+   UNIVERSAL DARK MODE STYLES
+   ============================= */
+
+/* === Global dark background and text === */
+body.dark-mode {
+  background-color: #041C32;
+  color: #f7f7fa;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === Links and buttons === */
+body.dark-mode a {
+  color: #FFB22C;
+}
+body.dark-mode a:hover {
+  color: #FFD580;
+}
+
+body.dark-mode button {
+  background-color: #0a2a4a;
+  color: #FFD580;
+  border: 1px solid #FFB22C;
+  transition: background-color 0.3s ease;
+}
+body.dark-mode button:hover {
+  background-color: #193340;
+}
+
+/* === Navbar and Footer === */
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: #082032;
+  color: #f7f7fa;
+  border-top: 2px solid #FFB22C;
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .footer-link {
+  color: #FFD580;
+}
+
+body.dark-mode .navbar a:hover,
+body.dark-mode .footer-link:hover {
+  color: #fff;
+}
+
+/* === Cards, Containers, and Sections === */
+body.dark-mode .card,
+body.dark-mode .section,
+body.dark-mode .content-block {
+  background-color: #193340;
+  color: #f7f7fa;
+  border: 1px solid #444;
+  box-shadow: 0 4px 24px #222;
+}
+
+/* === Tables === */
+body.dark-mode table {
+  background: #23272b;
+  color: #f7f7fa;
+  border-color: #f7b731;
+}
+
+body.dark-mode th {
+  background-color: #0a2a4a;
+  color: #FFB22C;
+  border-color: rgba(247, 214, 148, 0.519);
+}
+
+body.dark-mode td {
+  background-color: #23272b;
+  color: #fff;
+  border-color: rgba(247, 214, 148, 0.519);
+}
+
+/* === Input Fields and Forms === */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #193340;
+  color: #fff;
+  border: 1px solid #FFB22C;
+}
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #ccc;
+}
+
+/* === Coordinators Page Specific (integrated here) === */
+body.dark-mode .coordinators-form {
+  background-color: #041C32;
+  border: 2px solid #f7b731;
+  color: #f7f7fa;
+}
+
+body.dark-mode .coordinator-block {
+  background-color: #193340;
+  color: #f7f7fa;
+  border: 1px solid #444;
+  box-shadow: 0 4px 24px #222;
+}
+
+body.dark-mode .coordinator-block h3 {
+  color: rgba(255, 218, 144, 0.816);
+}
+
+/* === Tables for coordinator section === */
+body.dark-mode table.coordinator-table {
+  background: #23272b;
+  color: #f7f7fa;
+  border-color: #f7b731;
+}

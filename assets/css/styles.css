@@ -1139,5 +1139,6 @@ body.dark-mode .loader h2 {
   height:30px;
   /* border:1px solid black; */
   /* padding-top:10px; */
-
+  position:absolute;
+  top:10;
 }
