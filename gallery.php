@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3x3 Interactive Gallery</title>
     <link rel="stylesheet" href="gallery-styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/dark-mode.css">
+
 </head>
 <body>
-    <!-- Navbar -->
-    <!-- <div id="navbar-container"></div> -->
+    <!-- ✅ Navbar Include -->
+  <?php include './navbar.php'; ?>
 
     <!-- Gallery Section -->
     <div class="gallery-container">
@@ -43,6 +46,9 @@
         <a class="prev">&#10094;</a>
         <a class="next">&#10095;</a>
     </div>
+
+     <!-- ✅ Footer Include -->
+  <?php include './footer.php'; ?>
 
     <!-- JS -->
     <script src="assets/js/gallery.js"></script>
