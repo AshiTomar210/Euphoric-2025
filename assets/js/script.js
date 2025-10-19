@@ -29,15 +29,23 @@ document.addEventListener("DOMContentLoaded", function () {
 //     window.location.href = 'login.html';
 // }
 
-if (
-  !localStorage.getItem('isAuthenticated') &&
-  !window.location.pathname.endsWith('login.html') &&
-  !window.location.pathname.endsWith('signup.html') &&
-  !window.location.pathname.endsWith('index.html') &&
-  !window.location.pathname.endsWith('rules.html')
-) {
-  window.location.href = 'login.html';
-}
+// if (
+//   !localStorage.getItem('isAuthenticated') &&
+//   !window.location.pathname.endsWith('login.php') &&
+//   !window.location.pathname.endsWith('signup.php') &&
+//   !window.location.pathname.endsWith('index.php') &&
+//   !window.location.pathname.endsWith('rules.php')
+// ) {
+//   window.location.href = 'login.html';
+// }
+
+// const publicPages = ['login', 'signup', 'index', 'rules',''];
+// const currentPage = window.location.pathname.split('/').pop().split('.')[0];
+
+// if (!localStorage.getItem('isAuthenticated') && !publicPages.includes(currentPage)) {
+//   window.location.href = 'login.php';
+// }
+
 
 
 

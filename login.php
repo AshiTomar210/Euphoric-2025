@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/auth.css">
     <link href="https://fonts.googleapis.com/css2?family=Frijole&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        #login-email, #login-password{
+            background-color: grey;
+        }
+        button[type='submit']{
+            background-color: whitesmoke;
+        }
+    </style>
 </head>
 <body>
     <div class="auth-container">
@@ -30,12 +38,12 @@
         e.preventDefault();
         // You can add real validation here
         localStorage.setItem('isAuthenticated', 'true');
-        window.location.href = 'index.html';
+        window.location.href = 'index.php';
     }); */
     document.getElementById('googleLoginBtn').addEventListener('click', function() {
         // Simulate Google login
         localStorage.setItem('isAuthenticated', 'true');
-        window.location.href = 'index.html';
+        window.location.href = 'index.php';
     });
     </script>
 </body>
