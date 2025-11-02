@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Check if user already exists
     $exists = $db->exists("SELECT * FROM users WHERE email = ?", [$email]);
     if ($exists) {
-        echo "<script>alert('Email already registered! Please login.'); window.location.href='login.html';</script>";
+        echo "<script>alert('Email already registered! Please login.'); window.location.href='login.php';</script>";
         exit;
     }
 
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ]);
 
     if ($insert) {
-        echo "<script>alert('Registration successful! Please login.'); window.location.href='login.html';</script>";
+        echo "<script>alert('Registration successful! Please login.'); window.location.href='login.php';</script>";
     } else {
         echo "<script>alert('Something went wrong! Try again.'); window.history.back();</script>";
     }

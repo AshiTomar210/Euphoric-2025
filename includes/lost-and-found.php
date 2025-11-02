@@ -11,7 +11,7 @@ try {
 
 
 // Create uploads directory if it doesn't exist
-$upload_dir = 'uploads/lost_found/';
+$upload_dir = './uploads/lost_found/';
 if (!file_exists($upload_dir)) {
     mkdir($upload_dir, 0755, true);
 }

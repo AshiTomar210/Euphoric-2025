@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* FAQ Container */
+.faq-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.faq-container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #ffbb33;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.faq-section {
+  margin-bottom: 40px;
+}
+
+.faq-section h2 {
+  font-size: 1.5rem;
+  color: #444;
+  border-left: 4px solid #ffbb33;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Question box */
+.faq-question {
+  background-color: #f7f7f7;
+  padding: 15px 20px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.faq-question:hover {
+  background-color: #fff6e5;
+  transform: scale(1.02);
+}
+
+/* Plus/minus icon using ::after */
+.faq-question::after {
+  content: '+';
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  color: #ffbb33;
+  transition: transform 0.3s ease;
+}
+
+/* Answer section */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  border-left: 3px solid #ffbb33;
+  border-radius: 0 0 10px 10px;
+  margin-top: -5px;
+  padding: 0 20px;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+  margin: 15px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Hover-based expand */
+.faq-question:hover + .faq-answer {
+  max-height: 150px;
+  padding: 15px 20px;
+}
+
+/* Change + to - on hover */
+.faq-question:hover::after {
+  content: '-';
+  transform: rotate(180deg);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .faq-container {
+    padding: 10px;
+  }
+  .faq-question {
+    font-size: 0.95rem;
+  }
+  .faq-container h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.faq-question.active::after {
+  content: '-';
+  transform: rotate(180deg);
+}
+
+.faq-question + .faq-answer {
+  transition: max-height 0.4s ease;
+}

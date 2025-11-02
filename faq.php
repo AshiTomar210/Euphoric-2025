@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ - Euphoric 2025</title>
-  <link rel="stylesheet" href="assets/css/faq.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/faq.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <div id="navbar">
-    <!-- Include navbar content here -->
-  </div>
+  <!-- ✅ Navbar Include -->
+  <?php include './navbar.php'; ?>
 
   <main class="faq-container">
     <h1>Frequently Asked Questions</h1>
@@ -36,11 +35,25 @@
 
   </main>
 
-  <!-- Footer -->
-  <div id="footer">
-    <!-- Include footer content here -->
-  </div>
+ <!-- ✅ Footer Include -->
+  <?php include 'includes/footer.php'; ?>
+  <script>
+    <script>
+  document.querySelectorAll(".faq-question").forEach((q) => {
+    q.addEventListener("click", () => {
+      q.classList.toggle("active");
+      const answer = q.nextElementSibling;
+      if (q.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        q.querySelector(".icon");
+      } else {
+        answer.style.maxHeight = null;
+      }
+    });
+  });
+</script>
 
+  </script>
   <script src="assets/js/faq.js"></script>
 </body>
 </html>

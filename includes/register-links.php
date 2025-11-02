@@ -6,10 +6,21 @@
     <title>Registration</title>
     <link rel="stylesheet" href="../assets/css/register-styles.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .actual_form{
+            text-decoration: none;
+            color:white;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top:20px;
+        }
+    </style>
 </head>
 <body>
     <div class="registration-container">
-         <div id="navbar-container"></div>
+        <!-- ✅ Navbar Include -->
+  <?php include './navbar.php'; ?>
+
         <div class="registration-form">
             <h2>Registration</h2>
             <!-- <div class="disclaimer">
@@ -32,16 +43,11 @@
             <div class="last-date-box">
                 <p class="last-date-text">Last Date: 20 March 2025</p>
             </div>
+
+            <a href="../cultural-form.php" class="actual_form">Register here</a>
         </div>
     </div>
 <script>
-  
-    fetch("navbar.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("navbar-container").innerHTML = data;
-        });
-
     
     document.addEventListener('DOMContentLoaded', function () {
         const successMessage = document.querySelector('.message.success');

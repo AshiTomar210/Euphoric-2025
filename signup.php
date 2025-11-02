@@ -33,7 +33,7 @@
         <button class="google-login-btn" id="googleSignupBtn" type="button">
             <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google icon"> Sign up with Google
         </button>
-        <p>Already have an account? <a href="login.html">Login</a></p>
+        <p>Already have an account? <a href="login.php">Login</a></p>
     </div>
     <script>
     // Simple demo: set isAuthenticated on signup
@@ -52,7 +52,7 @@
     document.getElementById('googleSignupBtn').addEventListener('click', function() {
         // Simulate Google signup
         localStorage.setItem('isAuthenticated', 'true');
-        window.location.href = 'index.html';
+        window.location.href = 'index.php';
     });
     </script>
 </body>

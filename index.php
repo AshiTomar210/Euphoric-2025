@@ -1,10 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['isAuthenticated']) || $_SESSION['isAuthenticated'] !== true) {
-    header("Location: login.html");
-    exit;
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +6,7 @@ if (!isset($_SESSION['isAuthenticated']) || $_SESSION['isAuthenticated'] !== tru
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euphoric 2025</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
@@ -21,7 +14,7 @@ if (!isset($_SESSION['isAuthenticated']) || $_SESSION['isAuthenticated'] !== tru
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
@@ -33,7 +26,8 @@ if (!isset($_SESSION['isAuthenticated']) || $_SESSION['isAuthenticated'] !== tru
       </div>
     </div>
 
-    <div id="navbar-container"></div>
+    <!-- ✅ Navbar Include -->
+  <?php include './navbar.php'; ?>
 
     <div class="content">
         <h1>Euphoric 2025</h1>
@@ -81,7 +75,7 @@ if (!isset($_SESSION['isAuthenticated']) || $_SESSION['isAuthenticated'] !== tru
                     </div> -->
             </div>
         </div>
-        <div class="events-block">
+        <!-- <div class="events-block">
             <h2 class="category-heading">Cultural Events</h2>
             <div class="events-row">
                 <div class="event-item">Dance</div>
@@ -120,90 +114,90 @@ if (!isset($_SESSION['isAuthenticated']) || $_SESSION['isAuthenticated'] !== tru
                 <div class="event-item">Table Tennis</div>
                 <div class="event-item">Tug of War</div>
             </div>
+        </div> -->
+        <div class="events-block">
+            <h3>Events</h3>
+            <div class="bento-grid">
+                <div class="bento-item bento-culture events-block">
+                    <h2 class="category-heading">Cultural Events</h2>
+                    <ul class="events-row">
+                        <li>Dance</li>
+                        <li>Singing</li>
+                        <li>Poetry</li>
+                        <li>Rangoli</li>
+                        <li>Skit</li>
+                        <li>Nukkad Natak</li>
+                        <li>Mimicry</li>
+                        <li>Musical Instrument</li>
+                    </ul>
+                </div>
+                <div class="bento-item bento-tech events-block">
+                    <h2 class="category-heading">Technical Events</h2>
+                    <ul class="events-row">
+                        <li>LAN Gaming</li>
+                        <li>Crossword Puzzle</li>
+                        <li>Extempore</li>
+                        <li>Debate</li>
+                        <li>AD MAD Show</li>
+                    </ul>
+                </div>
+                <div class="bento-item bento-sports events-block">
+                    <h2 class="category-heading">Sports Events</h2>
+                    <ul class="events-row">
+                        <li>Cricket</li>
+                        <li>Volleyball</li>
+                        <li>Basketball</li>
+                        <li>Chess</li>
+                        <li>Carrom</li>
+                        <li>400m Relay Race</li>
+                        <li>100m Race</li>
+                        <li>200m Race</li>
+                        <li>Shot Put</li>
+                        <li>Long Jump</li>
+                        <li>Lemon Race</li>
+                        <li>Badminton</li>
+                        <li>Table Tennis</li>
+                        <li>Tug of War</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        
         <div class="events-block">
             <div class="register-button-container">
                 <a href="includes/register-links.php"> <button class="register-btn">Register Now!!</button></a>
             </div>
         </div>
         <div class="gallery-preview">
-            <h2>Gallery Highlights</h2>
-            <div class="gallery-images scrolling-track">
-                <!-- Duplicates for infinite scroll -->
-            <img src="img/nimage1.jpg" alt="Gallery Image 2">
-            <img src="img/nimage2.jpg" alt="Gallery Image 1">
-            <img src="img/nimage3.jpg" alt="Gallery Image 3">
-            <img src="img/nimage4.jpg" alt="Gallery Image 4">
-            <img src="img/nimage15.jpg" alt="Gallery Image 6">
-            <img src="img/nimage14.jpg" alt="Gallery Image 6">
-            <img src="img/nimage5.jpg" alt="Gallery Image 6">
-            <img src="img/nimage6.jpg" alt="Gallery Image 5">
-            <img src="img/nimage7.jpg" alt="Gallery Image 6">
-            <img src="img/nimage8.jpg" alt="Gallery Image 6">
-            <img src="img/nimage9.jpg" alt="Gallery Image 6">
-            <img src="img/nimage10.jpg" alt="Gallery Image 6">
-            <img src="img/nimage11.jpg" alt="Gallery Image 6">
-            <img src="img/nimage12.jpg" alt="Gallery Image 6">
+            <div class="gallery">
+                <h2>Gallery Highlights</h2>
+                <div class="gallery-images scrolling-track">
+                    <!-- Duplicates for infinite scroll -->
+                <!-- <img src="img/nimage1.jpg" alt="Gallery Image 2"> -->
+                <img src="img/nimage2.jpg" alt="Gallery Image 1">
+                <img src="img/nimage3.jpg" alt="Gallery Image 3">
+                <img src="img/nimage4.jpg" alt="Gallery Image 4">
+                <img src="img/nimage15.jpg" alt="Gallery Image 6">
+                <img src="img/nimage14.jpg" alt="Gallery Image 6">
+                <img src="img/nimage5.jpg" alt="Gallery Image 6">
+                <img src="img/nimage6.jpg" alt="Gallery Image 5">
+                <img src="img/nimage7.jpg" alt="Gallery Image 6">
+                <img src="img/nimage8.jpg" alt="Gallery Image 6">
+                <img src="img/nimage9.jpg" alt="Gallery Image 6">
+                <img src="img/nimage10.jpg" alt="Gallery Image 6">
+                <img src="img/nimage11.jpg" alt="Gallery Image 6">
+                <img src="img/nimage12.jpg" alt="Gallery Image 6">
+                </div>
+                <a href="gallery.html" class="view-more-btn">View More</a>
             </div>
-            <a href="gallery.html" class="view-more-btn">View More</a>
         </div>
     </div>
 
     <button id="backToTop" title="Go to top" aria-label="Scroll to top">⇧</button>
-    
-    <div id="footer-container"></div>
+     <!-- ✅ Footer Include -->
+  <?php include './footer.php'; ?>
     
     <script src="assets/js/script.js"></script>
-     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const loadingScreen = document.getElementById("loading-screen");
-        const loadingText = document.getElementById("loading-text");
-
-        const texts = ["Ready for the fest", "Let's go"];
-
-        let index = 0;
-
-        // Change text every 4 seconds
-        const textInterval = setInterval(() => {
-          index = (index + 1) % texts.length;
-          loadingText.style.opacity = 0; // fade out
-          setTimeout(() => {
-            loadingText.innerHTML = texts[index] + '<span class="dots"></span>';
-            loadingText.style.opacity = 1; // fade in
-          }, 500);
-        }, 4000);
-
-        // Hide loading screen after 6 seconds
-        setTimeout(() => {
-          clearInterval(textInterval); // stop changing text
-          loadingScreen.classList.add("hidden");
-        }, 8000); // adjust as needed
-      });
-    </script>
-<script>
-    // Load Navbar
-    fetch("navbar.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("navbar-container").innerHTML = data;
-        });
-
-   
-    document.addEventListener('DOMContentLoaded', function () {
-        const successMessage = document.querySelector('.message.success');
-        if (successMessage) {
-            setTimeout(function () {
-                successMessage.style.opacity = '0';
-                setTimeout(function () {
-                    successMessage.style.display = 'none';
-                }, 300);
-            }, 5000);
-        }
-    });
-</script>
-
-    
-
 </body>
 
 </html>
