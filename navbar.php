@@ -22,3 +22,5 @@
     </button>
   </div>
 </nav>
+
+<script src="/assets/js/theme.js" defer></script>

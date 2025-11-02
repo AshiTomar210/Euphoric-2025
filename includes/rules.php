@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../assets/css/rules.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../assets/css/dark-mode.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
      <link

@@ -47,8 +47,6 @@
 
   <!-- Copyright -->
   <div class="copyright">
-    <p class="developer-credit">
-      Developed with <img src="../img/heart.png" alt="love" /> by Ayushi Tomar
-    </p>
+    <pre class="developer-credit">Developed with <img src="./img/heart.png" alt="love" />    by Ayushi Tomar</pre>
   </div>
 </footer>

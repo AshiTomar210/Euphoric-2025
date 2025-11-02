@@ -6,6 +6,8 @@
     <title>Sign Up - Euphoric 2025</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/auth.css">
+    <link rel="stylesheet" href="./assets/css/dark-mode.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Frijole&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>

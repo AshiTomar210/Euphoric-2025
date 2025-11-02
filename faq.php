@@ -6,6 +6,8 @@
   <title>FAQ - Euphoric 2025</title>
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/faq.css">
+  <link rel="stylesheet" href="./assets/css/dark-mode.css">
+
 </head>
 <body>
 

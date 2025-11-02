@@ -6,6 +6,8 @@
     <title>3x3 Interactive Gallery</title>
     <link rel="stylesheet" href="gallery-styles.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/dark-mode.css">
+
 </head>
 <body>
     <!-- ✅ Navbar Include -->
