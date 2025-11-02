@@ -37,7 +37,7 @@
     <!-- Newsletter -->
     <div class="form">
       <h2 class="footer-text">Subscribe to our Newsletter</h2>
-      <form action="#" method="POST" class="subscribe-form">
+      <form action="../config/newsletter_api.php" method="POST" class="subscribe-form">
         <input class="subscribe-item" type="email" name="email" placeholder="Enter your email" required />
         <input class="subscribe-item" type="number" placeholder="Enter your contact number" required />
         <button type="submit">Subscribe</button>
